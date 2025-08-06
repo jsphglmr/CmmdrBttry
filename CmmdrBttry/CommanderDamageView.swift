@@ -30,6 +30,8 @@ struct CommanderDamageView: View {
                                 HStack(spacing: 15) {
                                     Button("-") {
                                         if player.commanderDamage[index] > 0 {
+                                            let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                                            impactFeedback.impactOccurred()
                                             player.commanderDamage[index] -= 1
                                         }
                                     }
@@ -41,6 +43,8 @@ struct CommanderDamageView: View {
                                         .frame(minWidth: 30)
                                     
                                     Button("+") {
+                                        let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                                        impactFeedback.impactOccurred()
                                         player.commanderDamage[index] += 1
                                     }
                                     .buttonStyle(CommanderDamageButtonStyle(color: .green))
