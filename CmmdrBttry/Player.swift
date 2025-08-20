@@ -5,14 +5,23 @@
 //  Created by Joseph Gilmore on 5/25/24.
 //
 
-import SwiftUICore
+import Foundation
+import SwiftData
 
-struct Player {
+@Model
+final class Player {
     var name: String
-    var life: Int
-    var startingLife: Int = 40 // Configurable starting life
-    var color: Color
-    var commanderDamage: [Int] = [0, 0, 0, 0] // Damage from each commander
-    var poisonCounters: Int = 0 // Poison counters (lose at 10)
-    var energyCounters: Int = 0 // Energy counters
+    var health: Int
+    var commanderDamage: Int = 0
+    var color: String
+    
+    init(name: String, health: Int, color: String) {
+        self.name = name
+        self.health = health
+        self.color = color
+    }
+    
+    static func testExample() -> Player {
+        return Player(name: "Joseph", health: 40, color: "Red")
+    }
 }
