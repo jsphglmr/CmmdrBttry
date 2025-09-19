@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB426CF72E7CD084001A177E /* DeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB426CF62E7CD084001A177E /* DeadView.swift */; };
 		EB55426C2C02FF01009F8072 /* SetupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55426B2C02FF01009F8072 /* SetupScreenView.swift */; };
 		EB55426E2C03011E009F8072 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55426D2C03011E009F8072 /* GameView.swift */; };
 		EBBA36F42BFAAE510018B9A5 /* CmmdrBttryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBA36F32BFAAE510018B9A5 /* CmmdrBttryApp.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB426CF62E7CD084001A177E /* DeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadView.swift; sourceTree = "<group>"; };
 		EB55426B2C02FF01009F8072 /* SetupScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupScreenView.swift; sourceTree = "<group>"; };
 		EB55426D2C03011E009F8072 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EBBA36F02BFAAE510018B9A5 /* CmmdrBttry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CmmdrBttry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				EBBA36F32BFAAE510018B9A5 /* CmmdrBttryApp.swift */,
 				EBBA36F52BFAAE510018B9A5 /* ContentView.swift */,
 				EB55426B2C02FF01009F8072 /* SetupScreenView.swift */,
+				EB426CF62E7CD084001A177E /* DeadView.swift */,
 				EB55426D2C03011E009F8072 /* GameView.swift */,
 				EBCDDF5B2C01CC1B00B3360E /* HealthView.swift */,
 				EBC09B782E558A2300364C17 /* MenuView.swift */,
@@ -274,6 +277,7 @@
 			files = (
 				EBC09B792E558A2300364C17 /* MenuView.swift in Sources */,
 				EBCDDF5C2C01CC1B00B3360E /* HealthView.swift in Sources */,
+				EB426CF72E7CD084001A177E /* DeadView.swift in Sources */,
 				EBBA36F62BFAAE510018B9A5 /* ContentView.swift in Sources */,
 				EBCDDF5E2C01CE4100B3360E /* Player.swift in Sources */,
 				EBBA36F42BFAAE510018B9A5 /* CmmdrBttryApp.swift in Sources */,

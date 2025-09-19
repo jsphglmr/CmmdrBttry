@@ -14,6 +14,7 @@ final class Player {
     var health: Int
     var commanderDamage: Int = 0
     var color: String
+    var isDead: Bool = false
     
     init(name: String, health: Int, color: String) {
         self.name = name

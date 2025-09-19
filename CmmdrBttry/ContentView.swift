@@ -11,9 +11,19 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var players: [Player]
+    @State private var navigationPath = NavigationPath()
 
     var body: some View {
-        SetupScreenView()
+        NavigationStack(path: $navigationPath) {
+            SetupScreenView()
+                .navigationDestination(for: Int.self) { playerCount in
+                    GameView(playerCount: playerCount)
+                }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .resetGame)) { _ in
+            // Reset navigation to go back to setup screen
+            navigationPath = NavigationPath()
+        }
     }
 }
 
